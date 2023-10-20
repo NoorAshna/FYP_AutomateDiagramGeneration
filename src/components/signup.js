@@ -1,6 +1,8 @@
 import React from 'react';
 import './Signup.css';
 import mainlogo from "../components/images/logomain.png";
+import  { useState } from 'react';
+
 export default function Signup() {
   const [formData, setFormData] = useState({
     username: '',
@@ -18,7 +20,7 @@ export default function Signup() {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:5000/signup', {
+      const response = await fetch('http://127.0.0.1:3001/signup', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -49,7 +51,7 @@ export default function Signup() {
       <form action="#" method="post">
         <div className="input-field">
           <label htmlFor="username" className="input-label">Username</label>
-          <input type="text" id="username" className="input" value={formData.username}
+          <input type="text" id="username" className="input" 
             onChange={handleInputChange}/>
         </div>
         <div className="input-field">
@@ -58,12 +60,12 @@ export default function Signup() {
         </div>
         <div className="input-field">
           <label htmlFor="password" className="input-label">Password</label>
-          <input type="password" id="password" className="input" value={formData.password}
+          <input type="password" id="password" className="input" 
             onChange={handleInputChange}/>
         </div>
         <div className="input-field">
           <label htmlFor="confirm-password" className="input-label">Confirm Password</label>
-          <input type="password" id="confirm-password" className="input" value={formData.confirmPassword}
+          <input type="password" id="confirm-password" className="input" 
             onChange={handleInputChange}/>
         </div>
         <button type="submit" className="submit-button" onSubmit={handleSubmit}>Sign Up</button>

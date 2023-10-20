@@ -24,7 +24,7 @@ export default function Login() {
       
         <button type="submit" className="submit-button">Sign Up</button>
         <div className='forgetpass'>
-        <a src="">forget password?</a>
+        <a src="#">forget password?</a>
         </div>
       </form>
 
