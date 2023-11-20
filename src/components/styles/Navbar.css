@@ -1,0 +1,14 @@
+#mainNav{
+    background-color: #494399;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.imglogo{
+    margin: 30px;
+}
+.imgsocial{
+    margin-right: 20px;
+}

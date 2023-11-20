@@ -1,5 +1,6 @@
 import React from 'react';
-import './login.css';
+// import './login.css';
+import './styles/login.css'
 import mainlogo from "../components/images/logomain.png";
 export default function Login() {
   return (

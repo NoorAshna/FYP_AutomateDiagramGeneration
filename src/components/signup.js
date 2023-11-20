@@ -1,5 +1,5 @@
 import React from 'react';
-import './Signup.css';
+import './styles/Signup.css';
 import mainlogo from "../components/images/logomain.png";
 import  { useState } from 'react';
 
