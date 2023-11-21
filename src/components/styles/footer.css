@@ -1,0 +1,11 @@
+#mainFooter{
+    background-color: #000000;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: aliceblue;
+}
+.innerFooter{
+    margin-left: 300px;
+}
