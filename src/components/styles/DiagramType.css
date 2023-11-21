@@ -1,0 +1,39 @@
+#mainDiagram{
+    background-color: #494399;
+    height: 40rem;
+    border: 1px solid #494399;
+   
+}
+.mainContent{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10%;
+   margin-top: 10%;
+    
+}
+.items{
+    
+    margin: 15px;
+    width: 100%;
+    display: flex;
+}
+.select{
+    background-color: #272170;
+    color: #FFFFFF;
+    padding: 10px;
+    width: 35%;
+    
+    text-align: center;
+}
+.viewbtn{
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    border-radius: 20px;
+    padding: 10px;
+    width: 100px;
+    margin-left: 35px;
+    cursor: pointer;
+}
