@@ -9,7 +9,7 @@ export default function navbar(){
     return(
         <div id='mainNav'>
           <div>
-          <img src={logo} alt="CogniDraw Logo" width="80" height="35" className='imglogo'/>
+          <img src={logo} alt="CogniDraw Logo" width="90" height="40" className='imglogo'/>
           </div>
           <div>
           <img src={menu} alt="CogniDraw Logo" width="30" height="30" className='imgsocial'/>

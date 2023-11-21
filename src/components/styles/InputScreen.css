@@ -1,0 +1,62 @@
+.mainInputscreen{
+    background-color: #494399;
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: center;
+    height: 40rem;
+}
+.inputinner1{
+    background-color: aliceblue;
+    width: 20%;
+    /* margin-left: 5px; */
+    margin: 15px;
+}
+.newInput{
+    margin: 15px;
+    padding: 10px;
+    background-color: #494399;
+    width: 85%;
+    border: none;
+    cursor: pointer;
+    color: aliceblue;
+}
+.history{
+    background-color: #2CCCC4;
+    margin: 5px;
+    padding: 5px;
+    height: 3.5rem;
+   
+}
+h3{
+    color: aliceblue;
+}
+.inputinner2{
+    width: 78%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#inputtext{
+    resize: none;
+    outline: none;
+}
+.generate{
+    display: flex;
+    flex-direction: column;
+}
+.InputButton2{
+    width: 15%;
+    margin-left: 85%;
+    margin-top: 10px;
+}
+.InputButton{
+    color: #FFFFFF;
+    border: 1px solid wheat;
+    border-radius: 25px;
+    padding: 15px;
+    background-color: transparent;
+    cursor: pointer;
+}

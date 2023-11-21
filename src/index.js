@@ -5,6 +5,7 @@ import reportWebVitals from './reportWebVitals';
 import Signup from './components/signup';
 import Navbar from './components/navbar';
 import Footer from './components/footer';
+import InputScreen from './components/InputScreen';
 import Home from './components/Home';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Login from './components/login';
@@ -22,7 +23,7 @@ root.render(
     {/* <Login />
     
       < Signup />  */}
-    < Home />
+    < InputScreen />
   </React.StrictMode>
 );
 
