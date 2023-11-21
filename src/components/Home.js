@@ -1,9 +1,13 @@
 import React from 'react';
 import mainimg from './images/nn.jpg'
+import Navbar from './navbar';
+import Footer from './footer';
 import './styles/Home.css'
 
 export default function Home(){
     return(
+        <>
+        <Navbar />
         <div id='mainHome'>
          <div className='Homeinner Homeinner1'>
             <div className='backRec'>
@@ -24,5 +28,7 @@ export default function Home(){
             </div>
          </div>
         </div>
+        <Footer />
+        </>
     )
 }

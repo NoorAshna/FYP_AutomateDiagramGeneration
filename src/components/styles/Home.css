@@ -4,7 +4,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: 38rem;
+    height: 40rem;
 }
 .Homeinner{
     width: 50%;
@@ -17,7 +17,7 @@
 }
 .backRec{
     width: 10rem;
-    height: 32rem;
+    height: 34rem;
     background-color: #2CCCC4;
     position: absolute;
     margin-top: 96px;
@@ -39,9 +39,9 @@
     height: 350px;
     background-color: #2CCCC4;
     color: aliceblue;
-    margin-top: 120px;
+    margin-top: 100px;
     margin-left: 100px;
-    padding: 10px;
+    padding: 20px;
 }
 .Homeinner2{
     display: flex;
