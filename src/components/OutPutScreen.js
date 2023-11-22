@@ -16,7 +16,7 @@ export default function OutPutScreen(){
                 <img src={edit} alt="edit" width="35" height="35" className='imgOutPut'/>
             </div>
             <div className='outputdiagram'>
-            <textarea id='inputtext' rows="20" cols="90" placeholder='Out put diagrams' readOnly/>
+            <textarea id='inputtext' rows="30" cols="100" placeholder='Out put diagrams' readOnly/>
             </div>
         </div>
         <Footer />
