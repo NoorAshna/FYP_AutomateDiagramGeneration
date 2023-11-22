@@ -3,8 +3,6 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Signup from './components/signup';
-import Navbar from './components/navbar';
-import Footer from './components/footer';
 import InputScreen from './components/InputScreen';
 import Home from './components/Home';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -15,17 +13,17 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
    
-   {/* <Router>
+   <Router>
       <Routes>
         <Route path="/login" element={<Login/>} />
         <Route path="/signup" element={<Signup/>} />
-        <Route path="/Home" element={<Home/>}/>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/InputScreen" element={<InputScreen />}/>
+        <Route path="/DiagramType" element={<DiagramType />}/>
+        <Route path="/OutPutScreen" element={<OutPutScreen />}/>
       </Routes>
-    </Router>   */}
-    {/* <Login />
-    
-      < Signup />  */}
-    < OutPutScreen />
+    </Router>  
+   
   </React.StrictMode>
 );
 
