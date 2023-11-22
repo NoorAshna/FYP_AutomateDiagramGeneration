@@ -12,9 +12,9 @@ export default function navbar(){
           <img src={logo} alt="CogniDraw Logo" width="90" height="40" className='imglogo'/>
           </div>
           <div>
-          <img src={menu} alt="CogniDraw Logo" width="30" height="30" className='imgsocial'/>
-          <img src={twitter} alt="CogniDraw Logo" width="30" height="30" className='imgsocial'/>
-          <img src={facebook} alt="CogniDraw Logo" width="30" height="30" className='imgsocial'/>
+          <img src={menu} alt="menu" width="30" height="30" className='imgsocial'/>
+          <img src={twitter} alt="twitter" width="30" height="30" className='imgsocial'/>
+          <img src={facebook} alt="facebook" width="30" height="30" className='imgsocial'/>
           </div>
         </div>
     )
