@@ -10,6 +10,7 @@ import Home from './components/Home';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Login from './components/login';
 import DiagramType from './components/DiagramType';
+import OutPutScreen from './components/OutPutScreen';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -24,7 +25,7 @@ root.render(
     {/* <Login />
     
       < Signup />  */}
-    < DiagramType />
+    < OutPutScreen />
   </React.StrictMode>
 );
 

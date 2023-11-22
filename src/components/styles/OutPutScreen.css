@@ -1,0 +1,29 @@
+.mainOutPut{
+    background-color: #494399;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.innerOutPut
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    width: 80%;
+   margin-top: -150px;
+   margin-bottom: 35px;
+}
+.imgOutPut{
+    margin-left: 15px;
+}
+#inputtext{
+    resize: none;
+    outline: none;
+    
+}
+.outputdiagram{
+
+}
