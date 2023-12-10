@@ -2,6 +2,8 @@ import React from 'react';
 import './styles/Signup.css';
 import mainlogo from "../components/images/logomain.png";
 import  { useState } from 'react';
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 export default function Signup() {
   const [formData, setFormData] = useState({
@@ -15,30 +17,27 @@ export default function Signup() {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
+  const navigate = useNavigate();
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  const handleSubmit = (event) => {
+      event.preventDefault();
+      
+      axios.post( 'http://127.0.0.1:3001/signup', formData)
+      .then(result => {
+          console.log(result);
+          if(result.data === "Already registered"){
+              alert("E-mail already registered! Please Login to proceed.");
+              navigate('/login');
+          }
+          else{
+              alert("Registered successfully! Please Login to proceed.")
+              navigate('/login');
+          }
+          
+      })
+      .catch(err => console.log(err));
+  }
 
-    try {
-      const response = await fetch('http://127.0.0.1:3001/signup', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
-
-      if (response.status === 201) {
-        const data = await response.json();
-        console.log(data);
-      } else {
-        const errorData = await response.json();
-        console.error(errorData);
-      }
-    } catch (error) {
-      console.error('Error:', error);
-    }
-  };
   return (
     <div className='MainBody'>
     <div className='logo'>
@@ -48,7 +47,7 @@ export default function Signup() {
     <div className="signup-form">
     <div className='circle' ></div>
       <h2 className="form-title">Sign Up</h2>
-      <form action="#" method="post">
+      <form onSubmit={handleSubmit} action="#" method="post">
         <div className="input-field">
           <label htmlFor="username" className="input-label">Username</label>
           <input type="text" id="username" className="input" 
@@ -68,7 +67,7 @@ export default function Signup() {
           <input type="password" id="confirm-password" className="input" 
             onChange={handleInputChange}/>
         </div>
-        <button type="submit" className="submit-button" onSubmit={handleSubmit}>Sign Up</button>
+        <button type="submit" className="submit-button" >Sign Up</button>
       </form>
 
       <div className='triangle'></div>
