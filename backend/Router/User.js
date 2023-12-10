@@ -6,6 +6,7 @@ require("dotenv").config();
 const User = require("../Model/User");
 const Diagram = require("../Model/Diagram");
 
+
 router.post("/signup", (req, res) => {
   console.log("Hello");
   const data = req.body;
