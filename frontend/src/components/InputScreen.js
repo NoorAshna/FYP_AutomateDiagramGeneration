@@ -2,8 +2,14 @@ import React from 'react';
 import './styles/InputScreen.css';
 import Navbar from './navbar';
 import Footer from './footer';
+import { useNavigate } from 'react-router-dom';
 
 export default function InputScreen(){
+
+    const navigate = useNavigate();
+    const toNextScreen = ()=>{
+        navigate('/DiagramType');
+    }
     return(
         <>
         <Navbar />
@@ -16,7 +22,7 @@ export default function InputScreen(){
              <div className='inputinner2'>
                 <div className='generate'>
                     <textarea id='inputtext' rows="20" cols="90" placeholder='Enter text here...'/>
-                    <button className='InputButton InputButton2'>Generate</button>
+                    <button className='InputButton InputButton2' onClick={toNextScreen}>Generate</button>
                 </div>
                 <h3>OR</h3>
                 <button className='InputButton'>Upload Document</button>

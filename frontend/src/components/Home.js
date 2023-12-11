@@ -3,8 +3,13 @@ import mainimg from './images/nn.jpg'
 import Navbar from './navbar';
 import Footer from './footer';
 import './styles/Home.css'
-
+import { useNavigate } from 'react-router-dom';
 export default function Home(){
+
+    const navigate = useNavigate();
+    const toNextScreen = ()=>{
+        navigate('/InputScreen');
+    }
     return(
         <>
         <Navbar />
@@ -24,7 +29,7 @@ export default function Home(){
                 <p>Our cutting-edge platform automates diagram generation, 
                     empowering software developers to effortlessly communicate complex concepts, 
                     enhancing collaboration, and accelerating innovation.</p>
-                <button className='homebutton'>Get Started</button>
+                <button className='homebutton' onClick={toNextScreen}>Get Started</button>
             </div>
          </div>
         </div>
