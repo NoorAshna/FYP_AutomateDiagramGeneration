@@ -4,16 +4,12 @@ import mainlogo from "../components/images/logomain.png";
 import  { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-
+import { Link } from 'react-router-dom';
 export default function Signup() {
   const [name, setName] = useState();
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
 
-  // const handleInputChange = (e) => {
-  //   const { name, value } = e.target;
-  //   setFormData({ ...formData, [name]: value });
-  // };
   const navigate = useNavigate();
 
   const handleSubmit = (event) => {
@@ -67,7 +63,9 @@ export default function Signup() {
         </div>
         <button type="submit" className="submit-button" >Sign Up</button>
       </form>
-
+      <div id='acc'>
+      <Link to='/login' > Already an account</Link>
+      </div>
       <div className='triangle'></div>
     </div>
     </div>

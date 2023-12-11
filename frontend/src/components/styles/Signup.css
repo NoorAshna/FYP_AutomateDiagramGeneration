@@ -24,7 +24,9 @@
     position: relative;
     padding-bottom: 50px;
   }
-  
+  #acc{
+    margin-top: 20px;
+  }
  
   
   .form-title {

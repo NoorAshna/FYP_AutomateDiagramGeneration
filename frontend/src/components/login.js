@@ -3,7 +3,7 @@ import React from 'react';
 import './styles/login.css'
 import mainlogo from "../components/images/logomain.png";
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import  { useState } from 'react';
 
 
@@ -52,8 +52,11 @@ export default function Login() {
           onChange={(event) => setPassword(event.target.value)}/>
         </div>
       
-        <button type="submit" className="submit-button">Sign Up</button>
+        <button type="submit" className="submit-button">Login </button>
+        
         <div className='forgetpass'>
+
+          <Link to='/signup'>Sign up</Link>
         <a src="#">forget password?</a>
         </div>
       </form>
