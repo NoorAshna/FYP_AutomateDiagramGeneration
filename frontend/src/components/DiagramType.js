@@ -17,15 +17,21 @@ export default function DiagramType({logged}){
         <div id='mainDiagram'>
             <div className='mainContent'>
                 <div className='items'>
-                    <div className='select'>class Diagram</div>
+                    <div className='select'><h3>Class Diagram</h3>
+                    <p>Click the view buttom below to generate the Class Diagram for your input</p>
+                    </div>
                     <button className='viewbtn' onClick={toNextScreen}>View</button>
                 </div>
                 <div className='items'>
-                    <div className='select'>SSD</div>
+                    <div className='select'><h3>SSD</h3>
+                    <p>Click the view buttom below to generate the System Sequence Diagram for your input</p>
+                    </div>
                     <button className='viewbtn' onClick={toNextScreen}>view</button>
                 </div>
                 <div className='items'>
-                    <div className='select'>UseCase Diagram</div>
+                    <div className='select'><h3>UseCase Diagram</h3>
+                    <p>Click the view buttom below to generate the UseCase Diagram for your input</p>
+                    </div>
                     <button className='viewbtn' onClick={toNextScreen}>View</button>
                 </div>
             </div>

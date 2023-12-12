@@ -6,6 +6,7 @@ import Signup from "./components/signup";
 import InputScreen from "./components/InputScreen";
 import DiagramType from "./components/DiagramType";
 import OutPutScreen from "./components/OutPutScreen";
+import OutPutPsuedocode from "./components/OutPutPsuedocode";
 
 export default function App(){
     const [logged , setlogged] = useState(false);
@@ -20,6 +21,7 @@ export default function App(){
          <Route path="/InputScreen" element={<InputScreen logged={logged} />}/>
          <Route path="/DiagramType" element={<DiagramType logged={logged}/>}/>
          <Route path="/OutPutScreen" element={<OutPutScreen logged={logged}/>}/>
+         <Route path="/OutPutPsuedocode" element={<OutPutPsuedocode logged={logged}/>}/>
       </Routes>
      
     )

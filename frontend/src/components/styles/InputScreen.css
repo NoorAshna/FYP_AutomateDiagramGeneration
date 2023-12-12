@@ -40,9 +40,17 @@ h3{
 }
 
 #inputtext{
+    padding: 10px;
     resize: none;
     outline: none;
+    box-shadow: 0 4px 4px rgba(13, 14, 13, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+  background: linear-gradient(to bottom, #fcfbf9, #b1c5db);
 }
+#inputtext:focus {
+    outline: none;
+    box-shadow: 0 4px 8px rgba(250, 248, 248, 0.2);
+  }
 .generate{
     display: flex;
     flex-direction: column;

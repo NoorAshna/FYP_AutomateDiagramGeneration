@@ -17,10 +17,10 @@ export default function InputScreen({logged}){
         <Navbar />
             <div className='mainInputscreen'>
                 
-             <div className='inputinner1'>
+             {/* <div className='inputinner1'>
                <button className='newInput'>New Input</button>
                <div className='history'><h3>history 1</h3></div>
-             </div>
+             </div> */}
              <div className='inputinner2'>
                 <div className='generate'>
                     <textarea id='inputtext' rows="20" cols="90" placeholder='Enter text here...'/>
