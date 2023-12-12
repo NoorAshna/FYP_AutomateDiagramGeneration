@@ -1,11 +1,15 @@
 import React from 'react';
 import edit from './images/edit-24.png';
 import download from './images/download-30.png';
+import { Navigate,useNavigate } from 'react-router-dom';
 import Navbar from './navbar';
-import Footer from './footer';
 import './styles/OutPutScreen.css'
-export default function OutPutScreen(){
+export default function OutPutScreen({logged}){
 
+    // const navigate = useNavigate();
+    if(!logged){
+        return <Navigate to='/login'/>
+    }
     return(
         <>
         <Navbar />
@@ -19,7 +23,6 @@ export default function OutPutScreen(){
             <textarea id='inputtext' rows="30" cols="100" placeholder='Out put diagrams' readOnly/>
             </div>
         </div>
-        <Footer />
         </>
     )
 }

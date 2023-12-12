@@ -1,11 +1,13 @@
 import React from 'react';
 import './styles/DiagramType.css';
 import Navbar from './navbar';
-import Footer from './footer';
-import { useNavigate } from 'react-router-dom';
+import { Navigate,useNavigate } from 'react-router-dom';
 
-export default function DiagramType(){
+export default function DiagramType({logged}){
     const navigate = useNavigate();
+    if(!logged){
+        return <Navigate to='/login'/>
+    }
     const toNextScreen = ()=>{
         navigate('/OutPutScreen');
     }
@@ -28,7 +30,7 @@ export default function DiagramType(){
                 </div>
             </div>
         </div>
-        <Footer />
+        
         </>
     )
 }

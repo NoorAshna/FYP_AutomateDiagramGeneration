@@ -1,14 +1,19 @@
 import React from 'react';
 import mainimg from './images/nn.jpg'
 import Navbar from './navbar';
-import Footer from './footer';
 import './styles/Home.css'
 import { useNavigate } from 'react-router-dom';
-export default function Home(){
+export default function Home({logged}){
 
     const navigate = useNavigate();
     const toNextScreen = ()=>{
-        navigate('/InputScreen');
+        if(logged){
+            navigate('/InputScreen');
+        }
+        else{
+            navigate('/login');
+        }
+        
     }
     return(
         <>
@@ -33,7 +38,7 @@ export default function Home(){
             </div>
          </div>
         </div>
-        <Footer />
+       
         </>
     )
 }

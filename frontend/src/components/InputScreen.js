@@ -1,12 +1,14 @@
 import React from 'react';
 import './styles/InputScreen.css';
 import Navbar from './navbar';
-import Footer from './footer';
-import { useNavigate } from 'react-router-dom';
+import { Navigate,useNavigate } from 'react-router-dom';
 
-export default function InputScreen(){
+export default function InputScreen({logged}){
 
     const navigate = useNavigate();
+    if(!logged){
+        return <Navigate to='/login'/>
+    }
     const toNextScreen = ()=>{
         navigate('/DiagramType');
     }
@@ -29,7 +31,7 @@ export default function InputScreen(){
              </div>
              
             </div>
-            <Footer />
+            
             </>
     )
 }

@@ -1,5 +1,4 @@
 import React from 'react';
-// import './login.css';
 import './styles/login.css'
 import mainlogo from "../components/images/logomain.png";
 import axios from 'axios';
@@ -7,7 +6,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import  { useState } from 'react';
 
 
-export default function Login() {
+export default function Login( {setlogged}) {
 
   const [email, setEmail] = useState();
     const [password, setPassword] = useState();
@@ -24,8 +23,7 @@ export default function Login() {
         
             alert("login successfully! .")
             navigate('/');
-        
-        
+            setlogged(true);  
     })
     .catch(err => console.log(err));
 }
