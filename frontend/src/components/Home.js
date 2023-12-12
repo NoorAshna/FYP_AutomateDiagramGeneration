@@ -36,6 +36,7 @@ export default function Home({logged}){
                     enhancing collaboration, and accelerating innovation.</p>
                 <button className='homebutton' onClick={toNextScreen}>Get Started</button>
             </div>
+            <div className='tri'></div>
          </div>
         </div>
        

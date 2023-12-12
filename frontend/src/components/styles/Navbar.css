@@ -10,6 +10,37 @@
     
     margin-left: 60px;
 }
-.imgsocial{
-    margin-right: 30px;
+.socialicons{
+    margin-right: 20px;
 }
+.imgsocial{
+    margin-right: 20px;
+    cursor: pointer;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #2CCCC4;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+    color: #333;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }

@@ -7,9 +7,10 @@ import InputScreen from "./components/InputScreen";
 import DiagramType from "./components/DiagramType";
 import OutPutScreen from "./components/OutPutScreen";
 import OutPutPsuedocode from "./components/OutPutPsuedocode";
+import Navbar from "./components/navbar";
 
 export default function App(){
-    const [logged , setlogged] = useState(false);
+    const [logged , setlogged] = useState(true);
     console.log(logged);
     return(
 
@@ -22,6 +23,7 @@ export default function App(){
          <Route path="/DiagramType" element={<DiagramType logged={logged}/>}/>
          <Route path="/OutPutScreen" element={<OutPutScreen logged={logged}/>}/>
          <Route path="/OutPutPsuedocode" element={<OutPutPsuedocode logged={logged}/>}/>
+         <Route element={<Navbar  logged={logged} setlogged={setlogged}/>}/>
       </Routes>
      
     )

@@ -14,13 +14,15 @@
 .Homeinner2{
     display: flex;
     flex-direction: row;
+    
+    z-index: 1;
 }
 .backRec{
     width: 10rem;
-    height: 34rem;
+    height: 36rem;
     background-color: #2CCCC4;
     position: absolute;
-    margin-top: 96px;
+    margin-top: 64px;
     margin-left: 350px;
     z-index: 1;
 }
@@ -56,10 +58,20 @@
     cursor: pointer;
 }
 .circle1{
-    width: 50px;
-    height: 50px; 
+    width: 60px;
+    height: 60px; 
     border-radius: 50px;
     background-color: aliceblue;
     margin-left: 24rem;
     margin-top: 3rem;   
+}
+.tri{
+    width: 60px;
+    height: 60px;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background-color: aliceblue;
+    margin-left: 73px;
+    margin-bottom: 20px;
+    margin-top: -40px;
+   transform: rotate(35deg);
 }

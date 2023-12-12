@@ -68,3 +68,10 @@ h3{
     background-color: transparent;
     cursor: pointer;
 }
+.star{
+    width: 80px;
+    height: 80px;
+    background-color: #c2baba;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);        
+    margin-top: 300px;
+}

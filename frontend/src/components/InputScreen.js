@@ -16,7 +16,8 @@ export default function InputScreen({logged}){
         <>
         <Navbar />
             <div className='mainInputscreen'>
-                
+            <div className='star'></div>
+
              {/* <div className='inputinner1'>
                <button className='newInput'>New Input</button>
                <div className='history'><h3>history 1</h3></div>
@@ -29,7 +30,6 @@ export default function InputScreen({logged}){
                 <h3>OR</h3>
                 <button className='InputButton'>Upload Document</button>
              </div>
-             
             </div>
             
             </>
