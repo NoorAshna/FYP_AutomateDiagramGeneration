@@ -35,7 +35,7 @@ export default function DiagramType({logged}){
                     <button className='viewbtn' onClick={toNextScreen}>View</button>
                 </div>
             </div>
-            <div className='triangle'></div>
+            <div className='triangle4'></div>
         </div>
         
         </>

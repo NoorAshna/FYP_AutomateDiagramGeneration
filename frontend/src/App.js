@@ -12,10 +12,8 @@ import History from "./components/History";
 import { AuthProvider } from './components/SharedStateContext';
 import React, { createContext, useContext, useState } from 'react';
 
-const SharedStateContext = createContext();
-
 export default function App(){
-    const [logged , setlogged] = useState(true);
+    const [logged , setlogged] = useState(false);
     console.log(logged);
     return(
 

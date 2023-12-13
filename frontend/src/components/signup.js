@@ -38,7 +38,7 @@ export default function Signup() {
     <img src={mainlogo} alt="CogniDraw Logo" width="388" height="180"/>
     </div>
     <div className="signup-form">
-    <div className='circle' ></div>
+    <div className='circle3' ></div>
       <h2 className="form-title">Sign Up</h2>
       <form onSubmit={handleSubmit} action="#" method="post">
         <div className="input-field">
@@ -66,7 +66,7 @@ export default function Signup() {
       <div id='acc'>
       <Link to='/login' > Already an account</Link>
       </div>
-      <div className='triangle'></div>
+      <div className='triangle3'></div>
     </div>
     </div>
   );

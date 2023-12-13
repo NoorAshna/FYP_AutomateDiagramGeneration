@@ -36,7 +36,7 @@ export default function Login( {setlogged}) {
     <img src={mainlogo} alt="CogniDraw Logo" width="388" height="180"/>
     </div>
     <div className="signup-form">
-    <div className='circle' ></div>
+    <div className='circle2' ></div>
       <h2 className="form-title">Log in </h2>
       <form onSubmit={handleSubmit} action="#" method="post">
         <div className="input-field">
@@ -60,7 +60,7 @@ export default function Login( {setlogged}) {
         </div>
       </form>
 
-      <div className='triangle'></div>
+      <div className='triangle2'></div>
     </div>
     </div>
   );

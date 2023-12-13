@@ -38,7 +38,7 @@
     margin-top: 20px;
     cursor: pointer;
 }
-.circle{
+.circle4{
     width: 60px;
     height: 60px; 
     border-radius: 50px;
@@ -46,12 +46,13 @@
     margin-left: 24rem;
     margin-top: 3rem;   
 }
-.triangle{
-    
+.triangle4{
+    width: 60px;
+    height: 60px;
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     background-color: rgb(213, 217, 221);
    
-    margin-left: 80px;
+    margin-left: 120px;
     margin-bottom: 20px;
     margin-top: -40px;
    transform: rotate(35deg);
