@@ -7,7 +7,7 @@ import './styles/OutPutScreen.css'
 export default function OutPutScreen({logged}){
 
     // const navigate = useNavigate();
-    if(!logged){
+    if(logged){
         return <Navigate to='/login'/>
     }
     return(

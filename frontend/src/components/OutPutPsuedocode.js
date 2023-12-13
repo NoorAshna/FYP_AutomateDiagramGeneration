@@ -7,7 +7,7 @@ import './styles/Pseudocode.css'
 export default function OutPutPsuedocode({logged}){
 
    
-    if(!logged){
+    if(logged){
         return <Navigate to='/login'/>
     }
     return(

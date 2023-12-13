@@ -6,7 +6,7 @@ import { Navigate,useNavigate } from 'react-router-dom';
 export default function InputScreen({logged}){
 
     const navigate = useNavigate();
-    if(!logged){
+    if(logged){
         return <Navigate to='/login'/>
     }
     const toNextScreen = ()=>{

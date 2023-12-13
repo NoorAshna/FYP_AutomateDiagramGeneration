@@ -6,6 +6,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import  { useState } from 'react';
 
 
+
 export default function Login( {setlogged}) {
 
   const [email, setEmail] = useState();
@@ -55,7 +56,7 @@ export default function Login( {setlogged}) {
         <div className='forgetpass'>
 
           <Link to='/signup'>Sign up</Link>
-        <a src="#">forget password?</a>
+        
         </div>
       </form>
 

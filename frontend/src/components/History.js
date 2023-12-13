@@ -1,9 +1,9 @@
 import React from 'react';
-import './styles/DiagramType.css';
+import './styles/history.css';
 import Navbar from './navbar';
 import { Navigate,useNavigate } from 'react-router-dom';
 
-export default function DiagramType({logged}){
+export default function History({logged}){
     const navigate = useNavigate();
     if(logged){
         return <Navigate to='/login'/>
@@ -17,20 +17,20 @@ export default function DiagramType({logged}){
         <div id='mainDiagram'>
             <div className='mainContent'>
                 <div className='items'>
-                    <div className='select'><h3>Class Diagram</h3>
-                    <p>Click the view buttom below to generate the Class Diagram for your input</p>
+                    <div className='selecthistory'><h3>History 1</h3>
+                    <p>12th dec 2023</p>
                     </div>
                     <button className='viewbtn' onClick={toNextScreen}>View</button>
                 </div>
                 <div className='items'>
-                    <div className='select'><h3>SSD</h3>
-                    <p>Click the view buttom below to generate the System Sequence Diagram for your input</p>
+                    <div className='selecthistory'><h3>History 2</h3>
+                    <p>12th dec 2023</p>
                     </div>
                     <button className='viewbtn' onClick={toNextScreen}>view</button>
                 </div>
                 <div className='items'>
-                    <div className='select'><h3>UseCase Diagram</h3>
-                    <p>Click the view buttom below to generate the UseCase Diagram for your input</p>
+                    <div className='selecthistory'><h3>History 3</h3>
+                    <p>12th dec 2023</p>
                     </div>
                     <button className='viewbtn' onClick={toNextScreen}>View</button>
                 </div>

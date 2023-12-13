@@ -19,12 +19,12 @@
     display: flex;
     flex-direction: column;
 }
-.select{
+.selecthistory{
     background-color: #272170;
     color: #FFFFFF;
     padding: 10px;
     width: 90%;
-    height: 220px;
+    height: 100px;
     text-align: center;
 }
 .viewbtn{

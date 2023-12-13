@@ -1,18 +1,22 @@
-import React from 'react';
+
 import './styles/Navbar.css'
 import logo from '../components/images/logomain.png';
 import facebook from '../components/images/facebook-50.png';
 import twitter from '../components/images/twitter-50.png';
 import profile from '../components/images/profile.png'
 import { Link, useNavigate } from 'react-router-dom';
+import React, { createContext, useContext, useState } from 'react';
+import { useAuth } from './SharedStateContext';
 
-export default function Navbar({logged , setLogged}) {
 
+export default function Navbar() {
+
+  const { logged, setlogged } = useAuth();
   const navigate = useNavigate();
   const logout = () => {
     
-    setLogged(false); 
     navigate('/');
+    setlogged(false) 
   };
   return (
     <div id='mainNav'>
@@ -22,7 +26,7 @@ export default function Navbar({logged , setLogged}) {
         </Link>
       </div>
       <div className='socialicons'>
-        { !logged ?
+        { logged ?
         
         <div className="dropdown">
         <img src={profile} alt="Profile" width="30" height="30" className='imgsocial' />
